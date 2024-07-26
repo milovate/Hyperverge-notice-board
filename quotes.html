@@ -1,0 +1,253 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book and Breaking Bad Quote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .book-author {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            border-left: 3px solid #3498db;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        .quote-author {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quote of the Minute</h1>
+
+        <div class="quote" id="quote">Loading...</div>
+        <div class="quote-author" id="quoteAuthor"></div>
+    </div>
+
+    <script src="quotes.js">
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Minute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* :root {
+            --canary-yellow: #c8b71d;
+            --dark-gray: #333333;
+            --light-gray: #F5F5F5;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--light-gray);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: var(--dark-gray);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h1::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: var(--canary-yellow);
+            margin: 10px auto 0;
+        }
+        
+        .quote {
+            font-size: 1.5rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--canary-yellow);
+            position: absolute;
+            left: -20px;
+            top: -20px;
+        }
+        
+        .quote-author {
+            font-weight: bold;
+            text-align: right;
+            color: var(--dark-gray);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .quote {
+                font-size: 1.2rem;
+            }
+        } */
+
+
+
+
+        :root {
+    --canary-yellow: #c8b71d;
+    --dark-gray: #333333;
+    --light-gray: #F5F5F5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: var(--dark-gray);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--canary-yellow);
+    margin: 8px auto 0;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    line-height: 1.5;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--canary-yellow);
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
+
+.quote-author {
+    font-weight: bold;
+    text-align: right;
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .quote {
+        font-size: 1rem;
+    }
+    
+    .quote-author {
+        font-size: 0.9rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quote of the Minute</h1>
+        <div class="quote" id="quote">Loading...</div>
+        <div class="quote-author" id="quoteAuthor"></div>
+    </div>
+
+    <script src="quotes.js"></script>
+</body>
+</html>
